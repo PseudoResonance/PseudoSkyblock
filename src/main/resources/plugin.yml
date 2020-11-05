@@ -1,71 +1,33 @@
 name: ${project.artifactId}
 author: PseudoResonance
-main: io.github.pseudoresonance.pseudospawners.PseudoSpawners
+main: io.github.pseudoresonance.pseudoskyblock.PseudoSkyblock
 version: ${revision}
-description: Adds the ability to collect and change spawner types
+description: Adds various skyblock utilities
 api-version: 1.13
 depend: [PseudoAPI]
 commands:
-  pseudospawners:
-    description: PseudoSpawners Menu
-  spawner:
-    description: Alias for PseudoSpawners spawner
-  editspawner:
-    description: Alias for PseudoSpawners editspawner
+  pseudoskyblock:
+    description: PseudoSkyblock Menu
 permissions:
-  pseudospawners.reload:
+  pseudoskyblock.reload:
     description: Allows the player to reload the plugin
     default: op
-  pseudospawners.reset:
+  pseudoskyblock.reset:
     description: Allows the player to reset the config
     default: op
     children:
-      pseudospawners.reload: true
-  pseudospawners.reloadlocalization:
+      pseudoskyblock.reload: true
+  pseudoskyblock.reloadlocalization:
     description: Allows the player to reload the localization
     default: op
-  pseudospawners.resetlocalization:
+  pseudoskyblock.resetlocalization:
     description: Allows the player to reset the localization
     default: op
     children:
-      pseudospawners.reloadlocalization: true
-  pseudospawners.craft:
-    description: Allows the player to craft spawners
-    default: true
-  pseudospawners.collect:
-    description: Allows the player to collect spawners
-    default: true
-  pseudospawners.collect.nosilk:
-    description: Allows the player to collect spawners without silk touch
+      pseudoskyblock.reloadlocalization: true
+  pseudoskyblock.*:
+    description: Gives the user all PseudoSkyblock permissions
     default: op
     children:
-      pseudospawners.collect: true
-  pseudospawners.modify:
-    description: Allows the player to change spawner types
-    default: true
-  pseudospawners.spawner:
-    description: Allows the player to change spawner types without an egg
-    default: op
-    children:
-      pseudospawners.modify: true
-  pseudospawners.spawn:
-    description: Allows the player to spawn spawners
-    default: op
-  pseudospawners.edit:
-    description: Allows the player to edit spawner data
-    default: op
-  pseudospawners.override:
-    description: Allows the player to change override disallowed spawner types
-    default: false
-  pseudospawners.*:
-    description: Gives the user all PseudoSpawners permissions
-    default: op
-    children:
-      pseudospawners.reset: true
-      pseudospawners.resetlocalization: true
-      pseudospawners.collect.nosilk: true
-      pseudospawners.spawner: true
-      pseudospawners.override: true
-      pseudospawners.craft: true
-      pseudospawners.spawn: true
-      pseudospawners.edit: true
+      pseudoskyblock.reset: true
+      pseudoskyblock.resetlocalization: true

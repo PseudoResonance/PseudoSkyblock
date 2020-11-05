@@ -1,80 +1,25 @@
 #########################
-# PseudoSpawners Config #
+# PseudoSkyblock Config #
 #########################
 
 # DO NOT CHANGE THIS LINE! YOUR CONFIG WILL BE RESET UPON LOADING IF THIS LINE IS EDITED!
-Version: 2
+Version: 1
 
 
-#######
-# GUI #
-#######
+########
+# Data #
+########
 
-# Last Page Button
-LastPageMaterial: Paper
-# Number between 0-8
-LastPageLocation: 1
-
-# Next Page Button
-NextPageMaterial: Paper
-# Number between 0-8
-NextPageLocation: 7
+# Data save interval (in seconds)
+DataSaveInterval: 3
 
 
-############
-# Spawners #
-############
+#################
+# Custom Blocks #
+#################
 
-# What mob types are not allowed?
-# List of possible mob types here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
-Blacklist:
-  - area_effect_cloud
-  - armor_stand
-  - arrow
-  - boat
-  - dragon_fireball
-  - egg
-  - ender_crystal
-  - ender_pearl
-  - ender_signal
-  - evoker_fangs
-  - experience_orb
-  - fireball
-  - giant
-  - item_frame
-  - leash_hitch
-  - llama_spit
-  - minecart
-  - minecart_chest
-  - minecart_command
-  - minecart_furnace
-  - minecart_hopper
-  - minecart_mob_spawner
-  - minecart_tnt
-  - painting
-  - primed_tnt
-  - shulker_bullet
-  - small_fireball
-  - snowball
-  - spectral_arrow
-  - splash_potion
-  - thrown_exp_bottle
-  - trident
-  - wither_skull
+# Whether or not redstone will disable the autominers
+AffectedByRedstone: true
 
-
-#############
-# Mob Names #
-#############
-
-# What chat color should the mob type be?
-Color: YELLOW
-
-# What are the names of different mob types?
-# List of possible mob types here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
-
-# List in the following format to override defaults:
-# Names:
-#  bat: "Bat"
-
-Names: []
+# Auto Miner speed (in ticks)
+AutoMinerSpeed: 300
